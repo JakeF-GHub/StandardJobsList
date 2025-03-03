@@ -12,7 +12,7 @@ session_start();
   	}
 	</script>
 <head>
-	<title> Standard Jobs Progress</title>
+	<title> Standard Jobs GITHUBGITHUBBIPBUBProgress</title>
 	<!--favicon 
 	<link rel="icon" type="image.png" href="https://staffboard/favicon.png"> -->
 	<!--my stylesheet-->
