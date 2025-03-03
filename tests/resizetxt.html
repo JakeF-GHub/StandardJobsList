@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resizable Text Input</title>
+<style>
+    .myInput {
+        width: 200px; /* Initial width */
+        height: auto; /* Allow height to adjust based on content */
+        resize: none;
+    }
+</style>
+</head>
+<body>
+
+<textarea class="myInput" oninput="resizeInput()"></textarea>
+<textarea class="myInput" oninput="resizeInput()"></textarea>
+<textarea class="myInput" oninput="resizeInput()"></textarea>
+<textarea class="myInput" oninput="resizeInput()"></textarea>
+
+
+<script>
+function resizeInput() {
+    const input = document.getElementById('myInput');
+    input.style.height = 'auto'; // Reset height to auto to calculate new height
+    input.style.height = input.scrollHeight + 'px'; // Set height to scrollHeight (content height)
+}
+</script>
+
+</body>
+</html>

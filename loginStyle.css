@@ -1,0 +1,193 @@
+/*if rules are equally specific, the rule defined later in the stylesheet overwrites */
+h2{
+	text-align: center;
+}
+body{
+	background-color: #FFF2CC;
+	font-family: Arial, sans-serif;
+	display: inline;
+}
+
+table {
+	border-collapse: : collapse;
+	/*border: 1px solid;*/
+	width: 2098px;
+	border-spacing: 0px;
+}
+table tr:hover td{
+	background-color: #dfedf5;
+}
+
+tr:nth-child(2n){
+	background-color: #e6ebed;
+}
+
+tr:nth-child(2n-1){
+	background-color: #ffffff;
+}
+
+th , td {
+	border: 1px solid;
+	text-align: left;
+	/*size of td's*/
+	padding: 8px;
+}
+th{
+	/*background-color: #e3e5e6*/
+	text-align: center;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+	width: 50px;
+}
+
+div{
+	background-color: #ffffff;
+	border-color: #0f0f0f;
+	border-style: groove;
+	width: 400px;
+	margin: auto;
+}
+
+p{
+	margin: 5px;
+}
+
+/*All textboxes*/
+input[type=text]{
+	background-color: #ffffff;
+  font-size: 16px;
+	width:50%;
+
+
+}
+
+button{
+	margin: 10px 5px 5px;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+	width: 50px;
+}
+th:nth-child(3),
+td:nth-child(3) {
+	width: 106px;
+}
+th:nth-child(4),
+td:nth-child(4) {
+	width: 106px;
+}
+th:nth-child(5),
+td:nth-child(5) {
+	width: 45px;
+}
+th:nth-child(6),
+td:nth-child(6) {
+	width: 45px;
+}
+th:nth-child(7),
+td:nth-child(7) {
+	width: 550px;
+}
+th:nth-child(8),
+td:nth-child(8) {
+	width: 106px;
+}
+th:nth-child(9),
+td:nth-child(9) {
+	width: 106px;
+}
+th:nth-child(10),
+td:nth-child(10) {
+	width: 106px;
+}
+th:nth-child(11),
+td:nth-child(11) {
+	width: 106px;
+}
+th:nth-child(12),
+td:nth-child(12) {
+	width: 72px;
+}
+th:nth-child(13),
+td:nth-child(13) {
+	width: 50px;
+}
+th:nth-child(14),
+td:nth-child(14) {
+	width: 300px;
+}
+th:nth-child(15),
+td:nth-child(15) {
+	width: 300px;
+}
+
+thead{
+	position: sticky;
+	top: 0px;
+}
+
+.new{
+
+}
+
+
+
+/*every other text box (only evens / grey ones)*/
+table tr:nth-child(even) input[type=text] {
+	background-color: #e6ebed;
+	}
+/* when hovering over the tr, change background of contained input*/
+table tr:hover input[type=text]{
+	background-color: #dfedf5;
+	}
+
+.longTxt{
+	background-color: #ffffff;
+	outline: none;
+	border: none;
+	font-size: 16px;
+	width: 100%;
+	height:auto;
+	resize:vertical;
+}
+table tr:nth-child(even) textarea{
+	background-color: #e6ebed;
+}
+
+table tr:hover textarea{
+	background-color: #dfedf5;
+}
+
+.alert{
+	width: 2098px;
+	height: 40px;
+	background-color: #fc0303;
+	color: #ffffff;
+	display: none;
+	position: sticky;
+	top: 0px;
+
+}
+h3{
+	padding: 10px;
+}
+.exitbtn{
+	padding:10px;
+}
+
+#actualDate{
+	display: none;
+}
+
+#newRow{
+	padding: 15px 32px;
+}
+
+.inEdit{
+	color: #ffffff;
+
+
+}
