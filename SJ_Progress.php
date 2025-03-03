@@ -121,28 +121,26 @@ session_start();
 	<!-- Table Headings with the Filters dropdown in a div at the end of each line* -->
 	<!-- *Except for Proc Desc as it dosent need one -->
 	 <table id= 'tagTable'>
-	 <thead class='stick2'>
-			<tr id='headTags'>
-				<th class=tags></th>
-				<th class=tags></th>
-
-				<th class=tags></th>
-				<th class=tags></th>
-				<th class=tags></th>
-				<th id='col6Tag' class=tags> Y=YES N=NO</th>
-				<th class='tags'><button id='lastPage' class='pageControls' type='button' onclick='changePage("lastP")'>Last Page</button>
-				</th>
-				<th class='tags'><select id='pageList' class='pageControls'  onchange='changePage("three",value)'>
-					
-					</select></th>
-				<th class='tags'><button id='nextPage' class='pageControls' type='button' onclick='changePage("nextP")'>Next Page</button></th>
-				<th class=tags ><button id='curFilter' type='button' onclick='clearFilter()'>&#9747; <?php print_r($_SESSION['displayName'])?></button></th>
-				<th class=tags></th>
-				<th class=tags></th>
-				<th class=tags></th>
-				<th class=tags></th>
-				<th class=tags><button id='logout' type = 'button' onclick='logout()'>Logout</button>	</th>
+	 <thead class='stick1'>
+			
+			<tr class='head'>
+				<th class ='heading'><div class ='th-dropdown'><button class='th-dropbtn th-hidden' type='button' onclick='viewsDropdown()'>V</button><div class='th-dropdown-content th-dropdownList'><a onclick='newFilters("numbers","09","Job_No","Oldest Job First")'>Smallest to Largest</a><a onclick='newFilters("numbers","90","Job_No","Newest Job First")'>Largest to Smallest</a></div></div>Job/CCR No</th>
+				<th class ='heading'><div class ='th-dropdown'><button class='th-dropbtn th-hidden' type='button' onclick='viewsDropdown()'>V</button><div class='th-dropdown-content th-dropdownList'><a onclick='newFilters("numbers","09","Card_Qty","Card Qty Smallest First")'>Smallest to Largest</a><a onclick='newFilters("numbers","90","Card_Qty","Card Qty Largest First")'>Largest to Smallest</a></div></div>Card Qty</th>
+				<th class ='heading'><div class ='th-dropdown'><button class='th-dropbtn th-hidden' type='button' onclick='viewsDropdown()'>V</button><div class='th-dropdown-content th-dropdownList'><a onclick='newFilters("date","09","Date_Created","Date Created Oldest First")'>Oldest to Newest</a><a onclick='newFilters("date","90","Date_Created","Date Created Newest First")'>Newest to Oldest</a></div></div>Date Created</th>
+				<th class ='heading'><div class ='th-dropdown'><button class='th-dropbtn th-hidden' type='button' onclick='viewsDropdown()'>V</button><div class='th-dropdown-content th-dropdownList'><a onclick='newFilters("date","09","Date_Issued","Date Issued Oldest First")'>Oldest to Newest</a><a onclick='newFilters("date","90","Date_Issued","Date Issued Newest First")'>Newest to Oldest</a></div></div>Date Issued</th>
+				<th class ='heading'><div class ='th-dropdown'><button class='th-dropbtn th-hidden' type='button' onclick='viewsDropdown()'>V</button><div class='th-dropdown-content th-dropdownList'><a onclick='newFilters("alphabet","AZ","Del_Sch","Del Schedule A-Z")' >A to Z</a><a onclick='newFilters("alphabet","ZA","Del_Sch","Del Schedule Z-A")'>Z to A</a></div></div>Del Sch</th>
+				<th class ='heading'><div class ='th-dropdown'><button class='th-dropbtn th-hidden' type='button' onclick='viewsDropdown()'>V</button><div class='th-dropdown-content th-dropdownList'><a onclick='newFilters("alphabet","AZ","DP_Tappings","Tappings A-Z")'>A to Z</a><a onclick='newFilters("alphabet","ZA","DP_Tappings","Tappings Z-A")'>Z to A</a></div></div>D/P Tappings</th>
+				<th class ='heading'>Process Description</th>
+				<th class ='heading'><div class ='th-dropdown'><button class='th-dropbtn th-hidden' type='button' onclick='viewsDropdown()'>V</button><div class='th-dropdown-content th-dropdownList'><a onclick='newFilters("date","09","Del_Date","Del Date Oldest First")'>Oldest to Newest</a><a onclick='newFilters("date","90","Del_Date","Del Date Newest First")'>Newest to Oldest</a></div></div>Delivery Date</th>
+				<th class ='heading'><div class ='th-dropdown'><button class='th-dropbtn th-hidden' type='button' onclick='viewsDropdown()'>V</button><div class='th-dropdown-content th-dropdownList'><a onclick='newFilters("date","09","Recieved_From_Stores","RtF Oldest First")'>Oldest to Newest</a><a onclick='newFilters("date","90","Recieved_From_Stores","RtF Newest First")'>Newest to Oldest</a></div></div>Date Recieved from Stores</th>
+				<th class ='heading'><div class ='th-dropdown'><button class='th-dropbtn th-hidden' type='button' onclick='viewsDropdown()'>V</button><div class='th-dropdown-content th-dropdownList'><a onclick='newFilters("date","09","Sent_to_Fab","StF Oldest First")'>Oldest to Newest</a><a onclick='newFilters("date","90","Sent_to_Fab","StF Newest First")'>Newest to Oldest</a></div></div>Sent to Fab</th>
+				<th class ='heading'><div class ='th-dropdown'><button class='th-dropbtn th-hidden' type='button' onclick='viewsDropdown()'>V</button><div class='th-dropdown-content th-dropdownList'><a onclick='newFilters("date","09","Date_Packed","DP Oldest First")'>Oldest to Newest</a><a onclick='newFilters("date","90","Date_Packed","DP Newest First")'>Newest to Oldest</a></div></div>Date Packed</th>
+				<th class ='heading'><div class ='th-dropdown'><button class='th-dropbtn th-hidden' type='button' onclick='viewsDropdown()'>V</button><div class='th-dropdown-content th-dropdownList'><a onclick='newFilters("bool","No","Packed","Packed")'>Packed</a><a onclick='newFilters("bool","Yes","Packed","Not Packed")'>Not Packed</a></div></div>Packed ?</th>
+				<th class ='heading'><div class ='th-dropdown'><button class='th-dropbtn th-hidden' type='button' onclick='viewsDropdown()'>V</button><div class='th-dropdown-content th-dropdownList'><a onclick='newFilters("bool","No","Late","Late")'>Late</a><a onclick='newFilters("bool","Yes","Late","On Time")'>On Time</a></div></div>Late ?</th>
+				<th class ='heading'>Missing BFI/On Order Del Date</th>
+				<th class ='heading'>Comments</th>
 			</tr>
+		</thead>
 		</table>
 	<table id="SJ_table">
 		<thead class='stick1'>
