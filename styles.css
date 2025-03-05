@@ -529,3 +529,8 @@ width: 100%;*/
     top: -65px;
     color: #ff0000;
 }
+
+.rowHeading {
+    position: relative;
+    top: -17px;
+}
