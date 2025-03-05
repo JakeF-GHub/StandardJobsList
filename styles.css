@@ -505,9 +505,9 @@ a.rHLHide{
 }
 #tagTable{
 	background-color: #fff2cc;
-	position: sticky;
+	/*position: sticky;
 	top: 0px;
-/*width: 100%;*/
+width: 100%;*/
 }
 
 
@@ -517,4 +517,6 @@ a.rHLHide{
 }
 .nav{
 	width: 100%;
+	position: sticky;
+	top: 0px;
 }
