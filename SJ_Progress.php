@@ -120,6 +120,7 @@ session_start();
 
 	<!-- Table Headings with the Filters dropdown in a div at the end of each line* -->
 	<!-- *Except for Proc Desc as it dosent need one -->
+	 <div class = 'nav'>
 	 <table id= 'tagTable'>
 	 <thead class='stick2'>
 			<tr id='headTags'>
@@ -144,6 +145,7 @@ session_start();
 				<th class=tags><button id='logout' type = 'button' onclick='logout()'>Logout</button>	</th>
 			</tr>
 		</table>
+		</div>
 	<table id="SJ_table">
 		<thead class='stick1'>
 			
