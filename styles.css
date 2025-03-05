@@ -524,3 +524,8 @@ width: 100%;*/
     flex-direction: column;
     align-items: center;
 }
+.caption {
+    position: relative;
+    top: -65px;
+    color: #ff0000;
+}
