@@ -121,30 +121,17 @@ session_start();
 	<!-- Table Headings with the Filters dropdown in a div at the end of each line* -->
 	<!-- *Except for Proc Desc as it dosent need one -->
 	 <div class = 'nav'>
-	 <table id= 'tagTable'>
-	 <thead class='stick2'>
-			<tr id='headTags'>
-				<th class=tags></th>
-				<th class=tags></th>
+	
+		<th class='tags'><button id='lastPage' class='pageControls' type='button' onclick='changePage("lastP")'>Last Page</button></th>
 
-				<th class=tags></th>
-				<th class=tags></th>
-				<th class=tags></th>
-			
-				<th class='tags'><button id='lastPage' class='pageControls' type='button' onclick='changePage("lastP")'>Last Page</button>
-				</th>
-				<th class='tags'><select id='pageList' class='pageControls'  onchange='changePage("three",value)'>
-					
-					</select></th>
-				<th class='tags'><button id='nextPage' class='pageControls' type='button' onclick='changePage("nextP")'>Next Page</button></th>
-				<th class=tags ><button id='curFilter' type='button' onclick='clearFilter()'>&#9747; <?php print_r($_SESSION['displayName'])?></button></th>
-				<th class=tags></th>
-				<th class=tags></th>
-				<th class=tags></th>
-				<th class=tags></th>
-				<th class=tags><button id='logout' type = 'button' onclick='logout()'>Logout</button>	</th>
-			</tr>
-		</table>
+		<th class='tags'><select id='pageList' class='pageControls'  onchange='changePage("three",value)'></select></th>
+
+		<th class='tags'><button id='nextPage' class='pageControls' type='button' onclick='changePage("nextP")'>Next Page</button></th>
+		
+		<th class=tags ><button id='curFilter' type='button' onclick='clearFilter()'>&#9747; <?php print_r($_SESSION['displayName'])?></button></th>
+		
+		<th class=tags><button id='logout' type = 'button' onclick='logout()'>Logout</button>	</th>
+		
 		</div>
 	<table id="SJ_table">
 		<thead class='stick1'>

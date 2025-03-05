@@ -515,15 +515,19 @@ width: 100%;*/
 #col6Tag{
 	color: #fc0303;
 }
-.nav{
-	width: 100%;
-	position: sticky;
-	top: 0px;
-	background-color: #fff2cc;
-	display: inline-flex;
-    flex-direction: column;
+
+.nav {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background-color: #fff2cc;
+    display: inline-flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: center;
     align-items: center;
 }
+
 .caption {
     position: relative;
     top: -65px;
