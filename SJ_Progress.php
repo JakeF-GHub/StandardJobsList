@@ -258,8 +258,6 @@ session_start();
 
 	//resizes all text areas when the page loads
 	document.addEventListener("DOMContentLoaded",function(){
-		const textareas = document.querySelectorAll('.longTxt');
-		textareas.forEach(textarea => resizeTxtArea(textarea));
 		removeLocks();
 	});
 

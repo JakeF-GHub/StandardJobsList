@@ -218,7 +218,7 @@ td{
 }
 tr.inEdit td{
 	border: 2px solid;
-	border-color: #fc0303;
+	
 }
 
 tr.Locked td{
